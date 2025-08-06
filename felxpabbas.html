@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ice Cream Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            border: 2px solid #000;
+            padding: 20px;
+            background-color: white;
+            gap: 30px;
+        }
+
+        .image-box, .form-box {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .image-box img {
+            width: 250px;
+            height: auto;
+        }
+
+        .form-box {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 300px;
+        }
+
+        .form-box .img-placeholder {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        input[type="text"], input[type="number"], input[type="tel"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Side Image -->
+    <div class="image-box">
+        <img src="https://aroundmangalore.com/wp-content/uploads/2014/02/Special-Gadbad-Ice-Cream-Pabbas-Mangalore.jpg" alt="Ice Cream">
+    </div>
+
+    <!-- Right Side Form -->
+    <div class="form-box">
+        <center>
+            <h1>login here</h1>
+            <img src="https://visitthemangalore.wordpress.com/wp-content/uploads/2020/11/pabbas2.jpg" width="90" height="90"></center>
+        <input type="text" id="name" placeholder="Name">
+        <input type="tel" id="phone" placeholder="Phone number">
+        <input type="text" id="icecream" placeholder="Ice cream name">
+        <input type="number" id="quantity" placeholder="Quantity">
+        <button onclick="placeOrder()">ORDER</button>
+    </div>
+</div>
+
+<script>
+    function placeOrder()
+    {
+        alert("order Placed");
+    }
+</script>
+
+</body>
+</html>
